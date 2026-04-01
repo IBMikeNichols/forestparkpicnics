@@ -1,0 +1,30 @@
+# netlify.toml
+# Forest Park Picnics Ñ Netlify configuration
+
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "https://forestparkpicnics.com/*"
+  to   = "https://www.forestparkpicnics.com/:splat"
+  status = 301
+  force  = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options        = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+    Permissions-Policy     = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type  = "application/xml"
