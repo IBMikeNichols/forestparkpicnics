@@ -1,8 +1,12 @@
 # netlify.toml
-# Forest Park Picnics Ñ Netlify configuration
+# Forest Park Picnics
 
 [build]
   publish = "."
+  command = ""
+
+[build.environment]
+  NODE_VERSION = "18"
 
 [[redirects]]
   from = "https://forestparkpicnics.com/*"
