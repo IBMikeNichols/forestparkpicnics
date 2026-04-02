@@ -50,6 +50,49 @@
 
   <script src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=2e3a19f9-d8dc-489d-bf79-c59ea4fcbbe3" async></script>
 
+  <!-- MAILERLITE -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments)},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n)})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2235838');
+  </script>
+  <style>
+    /* MailerLite embed overrides to match dark sage section */
+    #mlb2-183476840063567514 { background: transparent !important; }
+    .ml-form-embedWrapper { background: transparent !important; padding: 0 !important; }
+    .ml-form-embedBody { background: transparent !important; padding: 0 !important; }
+    .ml-form-fieldRow { display: flex; gap: 0; max-width: 28rem; margin: 0 auto; }
+    .ml-form-fieldRow input[type="email"] {
+      flex: 1 !important;
+      padding: 0.75rem 1rem !important;
+      border: 1px solid rgba(255,255,255,0.3) !important;
+      background: rgba(255,255,255,0.1) !important;
+      color: white !important;
+      border-radius: 0.5rem 0 0 0.5rem !important;
+      font-family: 'Ubuntu', sans-serif !important;
+      font-size: 0.9rem !important;
+    }
+    .ml-form-fieldRow input[type="email"]::placeholder { color: rgba(255,255,255,0.6) !important; }
+    .ml-form-embedSubmit { margin: 0 !important; }
+    .ml-form-embedSubmit button {
+      padding: 0.75rem 1.5rem !important;
+      background: #d6ce93 !important;
+      color: #1c1c1c !important;
+      font-weight: 600 !important;
+      font-size: 0.85rem !important;
+      border: none !important;
+      border-radius: 0 0.5rem 0.5rem 0 !important;
+      cursor: pointer !important;
+      font-family: 'Ubuntu', sans-serif !important;
+      white-space: nowrap !important;
+      height: 100% !important;
+    }
+    .ml-form-embedSubmit button:hover { background: #c4ba7a !important; }
+    .ml-form-successBody { text-align: center; color: #d6ce93; font-size: 1.1rem; }
+    .ml-form-formContent { padding: 0 !important; }
+    .ml-form-checkboxRow, .ml-form-recaptcha { display: none !important; }
+    .ml-form-embedWrapper .ml-block-form { padding: 0 !important; }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context":"https://schema.org","@type":"LocalBusiness","name":"Forest Park Picnics",
@@ -89,10 +132,7 @@
     /* nav handled by header element with Tailwind classes */
     .booking-panel { display:none; }
     .booking-panel.active { display:block; }
-    .email-input { flex:1; padding:.75rem 1rem; border:1px solid rgba(255,255,255,.3); background:rgba(255,255,255,.1); color:white; border-radius:.5rem 0 0 .5rem; font-family:'Ubuntu',sans-serif; font-size:.9rem; outline:none; }
-    .email-input::placeholder { color:rgba(255,255,255,.6); }
-    .email-btn { padding:.75rem 1.5rem; background:#d6ce93; color:#1c1c1c; font-weight:600; font-size:.85rem; border:none; border-radius:0 .5rem .5rem 0; cursor:pointer; font-family:'Ubuntu',sans-serif; white-space:nowrap; transition:background .2s; }
-    .email-btn:hover { background:#c4ba7a; }
+
     @media(max-width:768px){.nav-links{display:none!important;}.hero-flex{flex-direction:column!important;}}
   </style>
 </head>
@@ -283,10 +323,9 @@
       <p class="text-xs font-semibold uppercase tracking-widest mb-3 opacity-75">Stay in the Loop</p>
       <h2 class="text-3xl font-bold mb-3">Heck yes I want emails from ForestParkPicnics.com</h2>
       <p class="opacity-70 mb-8 text-sm">New menus, availability alerts, and the occasional picnic love letter.</p>
-      <form id="email-form" class="flex max-w-md mx-auto">
-        <input type="email" placeholder="your@email.com" required class="email-input" />
-        <button type="submit" class="email-btn">SUBSCRIBE</button>
-      </form>
+      <div class="max-w-md mx-auto">
+        <div class="ml-embedded" data-form="kkZkz1"></div>
+      </div>
     </div>
   </section>
 
