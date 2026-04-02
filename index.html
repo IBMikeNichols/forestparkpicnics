@@ -82,8 +82,10 @@
 
     .tab-btn { padding:.5rem 1.25rem; border-radius:9999px; font-weight:500; font-size:.875rem; cursor:pointer; border:none; background:transparent; color:#6b7280; transition:all .2s; }
     .tab-btn.active { background:#607466; color:white; }
-    .check-item::before { content:'✓'; color:#607466; font-weight:700; margin-right:.5rem; }
-    .dot-item::before { content:'•'; color:#607466; font-weight:700; margin-right:.5rem; }
+    .check-item { display:flex; align-items:baseline; }
+    .check-item::before { content:'✓'; color:#607466; font-weight:700; margin-right:.5rem; flex-shrink:0; }
+    .dot-item { display:flex; align-items:baseline; }
+    .dot-item::before { content:'•'; color:#607466; font-weight:700; margin-right:.5rem; flex-shrink:0; }
     /* nav handled by header element with Tailwind classes */
     .booking-panel { display:none; }
     .booking-panel.active { display:block; }
@@ -319,16 +321,31 @@
         </div>
       </div>
 
-      <div class="mt-6 pt-6 border-t border-gray-100">
-        <p class="text-sm text-gray-500 mb-2">What's Included</p>
-        <div class="grid md:grid-cols-2 gap-x-8 mb-6">
-          <p class="check-item text-sm text-gray-700">Three-course meal from 4 local eateries</p>
-          <p class="check-item text-sm text-gray-700">Fully-stocked picnic basket</p>
-          <p class="check-item text-sm text-gray-700">Blanket, cups, cutlery, corkscrew</p>
-          <p class="check-item text-sm text-gray-700">2-hour private picnic time</p>
-          <p class="check-item text-sm text-gray-700">$5 donation to Forest Park Forever</p>
+      <div class="mt-8 pt-8 border-t border-gray-100">
+        <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto text-center mb-8">
+          <div>
+            <p class="text-sm font-semibold text-gray-700 mb-3">What's Included</p>
+            <div class="space-y-2 text-sm text-gray-600">
+              <p class="check-item justify-center">Three-course meal from 4 local eateries</p>
+              <p class="check-item justify-center">Fully-stocked picnic basket</p>
+              <p class="check-item justify-center">Blanket, cups, cutlery, corkscrew</p>
+              <p class="check-item justify-center">2-hour private picnic time</p>
+              <p class="check-item justify-center">$5 donation to Forest Park Forever</p>
+            </div>
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-gray-700 mb-3">Good to Know</p>
+            <div class="space-y-2 text-sm text-gray-600">
+              <p class="dot-item justify-center">Availability is limited—book early</p>
+              <p class="dot-item justify-center">Free cancellation 24+ hours before</p>
+              <p class="dot-item justify-center">Operating Wed–Sat, April–October</p>
+              <p class="dot-item justify-center">Two scenic locations available</p>
+              <p class="dot-item justify-center">Menu rotates monthly</p>
+              <p class="dot-item justify-center">Perfect for dates &amp; special occasions</p>
+            </div>
+          </div>
         </div>
-        <p class="text-sm text-gray-500 mt-4">
+        <p class="text-center text-sm text-gray-500">
           Want to treat someone to a picnic? <a href="https://www.tourcwe.com/giftcards" class="text-sage underline">Send a Gift Card</a>
           &nbsp;·&nbsp;
           Questions? Special occasion? <a href="mailto:hey@forestparkpicnics.com" class="text-sage underline">Get in Touch</a>
