@@ -18,3 +18,43 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
     Content-Type  = "application/xml"
+
+[[redirects]]
+  from = "/art-hill"
+  to   = "/art-hill-picnic-st-louis"
+  status = 301
+
+[[redirects]]
+  from = "/art_hill"
+  to   = "/art-hill-picnic-st-louis"
+  status = 301
+
+[[redirects]]
+  from = "/arthill"
+  to   = "/art-hill-picnic-st-louis"
+  status = 301
+
+[[redirects]]
+  from = "/lunch"
+  to   = "/art-hill-picnic-st-louis"
+  status = 301
+
+[[redirects]]
+  from = "/pagoda-lake"
+  to   = "/pagoda-lake-picnic-st-louis"
+  status = 301
+
+[[redirects]]
+  from = "/pagoda_lake"
+  to   = "/pagoda-lake-picnic-st-louis"
+  status = 301
+
+[[redirects]]
+  from = "/pagoda"
+  to   = "/pagoda-lake-picnic-st-louis"
+  status = 301
+
+[[redirects]]
+  from = "/dinner"
+  to   = "/pagoda-lake-picnic-st-louis"
+  status = 301
