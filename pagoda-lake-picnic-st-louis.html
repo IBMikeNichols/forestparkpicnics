@@ -30,7 +30,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="/tailwind.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage:        '#607466',
+            'sage-dark': '#4d5e52',
+            beige:       '#d6ce93',
+            cream:       '#efebce',
+            charcoal:    '#1c1c1c',
+            steel:       '#628395',
+          },
+          fontFamily: { ubuntu: ['Ubuntu', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
 
   <script src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=2e3a19f9-d8dc-489d-bf79-c59ea4fcbbe3" async></script>
 
@@ -93,7 +110,7 @@
   <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
     <nav class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
       <a href="/" class="flex-shrink-0">
-        <img src="https://us.chat-img.sintra.ai/9084f0c1-ae05-4f46-8c2f-b7b9ddc565d8/500a9431-8608-4450-bdbf-048473e40a10/bannernavhead.png" alt="Forest Park Picnics" class="h-12 w-auto block" />
+        <img src="https://us.chat-img.sintra.ai/9084f0c1-ae05-4f46-8c2f-b7b9ddc565d8/500a9431-8608-4450-bdbf-048473e40a10/bannernavhead.png" alt="Forest Park Picnics" class="w-auto block" style="height:3rem;max-height:3rem;" />
       </a>
       <div class="flex items-center gap-8 ml-12">
         <a href="/" class="text-sm font-medium hover:opacity-70 transition-opacity" style="color:#1C1C1C">Home</a>
