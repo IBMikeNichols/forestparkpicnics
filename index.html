@@ -406,17 +406,19 @@
       e.preventDefault();
       const email = document.getElementById('ml-email').value;
       const msg = document.getElementById('ml-msg');
-      fetch('https://connect.mailerlite.com/api/subscribers', {
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'JOINING...';
+      fetch('/api/subscribe', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiNTZkNzVkOTM3YzBlMDFlMzI3ZGUzZDE2MDJiY2Q2MGYwN2M5NmY3MmNmMDZmYTRiNjMwZjJjMjZhMWQ4NWM4YjUxZWEyNTA1MTUwOGUwNzYiLCJpYXQiOjE3NDM1MjcyNzYuMTI1NjU4LCJuYmYiOjE3NDM1MjcyNzYuMTI1NjYsImV4cCI6NDg5OTIwMDg3Ni4xMjI3MDMsInN1YiI6IjEyMTIwNjMiLCJzY29wZXMiOltdfQ.cuT-wqU7aXHnuKbcGFHPtFVD1TjCBxuWQYvxDnFHDfJfLANAY7DPaGv1J0t7B9PH7P5C9vWbzXoWTFmwIqRB9VPrqSXHOSmx8RbhiOX_jPqVCfRHi6LNFGWI7ILm_i4Wlc2ULMlDVSBNtHIBVsz_4BEKQCIXMzRmMFJlZHc'
-        },
-        body: JSON.stringify({ email, groups: ['183608949676705180'] })
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
       })
       .then(r => {
         msg.style.display = 'block';
-        if (r.status === 200 || r.status === 201) {
+        btn.disabled = false;
+        btn.textContent = 'SUBSCRIBE';
+        if (r.status === 200) {
           msg.textContent = "You're in! Expect picnic love letters soon.";
         } else if (r.status === 409) {
           msg.textContent = "You're already on the list!";
@@ -426,6 +428,8 @@
       })
       .catch(() => {
         msg.style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = 'SUBSCRIBE';
         msg.textContent = "Something went wrong. Try again or email us.";
       });
     }
