@@ -116,11 +116,7 @@
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden hero-bg">
     <div class="absolute inset-0 z-0"></div>
     <div class="relative z-10 max-w-4xl mx-auto px-6 text-center text-white pt-20">
-      <div class="mb-8">
-        <img src="https://us.chat-img.sintra.ai/9084f0c1-ae05-4f46-8c2f-b7b9ddc565d8/e3790e54-ac84-47cc-8cbd-5cbba074f0d8/LifeIsShortCircleLogoCREAM.png"
-             alt="Forest Park Picnics - Life is Short · Have a Picnic"
-             class="w-56 md:w-64 h-auto mx-auto" />
-      </div>
+      
       <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">STL's No-Brainer Date Plan</h1>
       <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto" style="color:#EFEBCE">Your just-show-up picnic date in Forest Park.<br>Curated menus from amazing local restaurants.<br>Minimum Effort. Maximum Romance.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -283,7 +279,7 @@
     <div class="max-w-xl mx-auto">
       <p class="text-xs font-semibold uppercase tracking-widest mb-3 opacity-75">Stay in the Loop</p>
       <h2 class="text-3xl font-bold mb-3">Heck yes I want emails from ForestParkPicnics.com</h2>
-      <p class="opacity-70 mb-8 text-sm">New menus, availability alerts, and the occasional picnic love letter.</p>
+      <p class="opacity-70 mb-8 text-sm">New menus, availability updates, and the occasional note from the park.</p>
       <form id="ml-signup-form" class="flex max-w-md mx-auto" onsubmit="mlSubmit(event)">
         <input type="email" id="ml-email" placeholder="your@email.com" required
           style="flex:1;padding:.75rem 1rem;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:white;border-radius:.5rem 0 0 .5rem;font-family:'Ubuntu',sans-serif;font-size:.9rem;outline:none;" />
@@ -419,7 +415,7 @@
         btn.disabled = false;
         btn.textContent = 'SUBSCRIBE';
         if (r.status === 200) {
-          msg.textContent = "You're in! Expect picnic love letters soon.";
+          msg.textContent = "You're in! Watch your inbox.";
         } else if (r.status === 409) {
           msg.textContent = "You're already on the list!";
         } else {
