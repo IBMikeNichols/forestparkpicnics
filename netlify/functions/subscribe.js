@@ -14,7 +14,7 @@ export default async (req) => {
     return new Response(JSON.stringify({ error: 'Invalid email' }), { status: 400 });
   }
 
-  const apiKey = Netlify.env.get('MAILERLITE_API_KEY');
+  const apiKey = process.env.MAILERLITE_API_KEY;
   if (!apiKey) {
     return new Response(JSON.stringify({ error: 'Server configuration error' }), { status: 500 });
   }
