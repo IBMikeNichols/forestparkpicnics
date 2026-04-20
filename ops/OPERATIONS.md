@@ -185,7 +185,7 @@ _Most recent entries at the top. Overnight review appends here. Sunday consolida
 - **Root:** https://drive.google.com/drive/folders/12rhZNg7yXBMnrZxIZIYHEMnHKZer1tTi
 - **Proposals:** `1DeXQRAA0tub3ANotXyvceKMU4x4rvC8A`
 - **Archive (under Proposals):** `1eztNmUrVM-lDhsoDUgoMNdF0rN6BMF55`
-- **Operations:** [ID to be populated when subfolder is created]
+- **Operations:** `1sBVrjkEb1POZwieqv7NgrJFm55uzyLys`
 
 ### MailerLite
 - **Website Signups group:** `183608949676705180`
