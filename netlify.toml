@@ -73,3 +73,10 @@
   from = "/stl-date-ideas"
   to   = "/forest-park-date-ideas"
   status = 301
+
+# Internal ops docs — not publicly served
+[[redirects]]
+  from = "/ops/*"
+  to   = "/404"
+  status = 404
+  force  = true
