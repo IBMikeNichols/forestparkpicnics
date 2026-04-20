@@ -58,3 +58,18 @@
   from = "/dinner"
   to   = "/pagoda-lake-picnic-st-louis"
   status = 301
+
+[[redirects]]
+  from = "/date-ideas"
+  to   = "/forest-park-date-ideas"
+  status = 301
+
+[[redirects]]
+  from = "/forest-park-dates"
+  to   = "/forest-park-date-ideas"
+  status = 301
+
+[[redirects]]
+  from = "/stl-date-ideas"
+  to   = "/forest-park-date-ideas"
+  status = 301
