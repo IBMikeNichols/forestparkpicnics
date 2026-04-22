@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src="https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);})(window,document,"script","dataLayer","GTM-MHFMCN2S");</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>You're In! | Forest Park Picnics</title>
+  <meta name="description" content="Thanks for confirming your subscription to Forest Park Picnics. Here's your 10% off code and what to expect next." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://forestparkpicnics.com/thanks" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage:       '#607466',
+            'sage-dark':'#4d5e52',
+            beige:      '#d6ce93',
+            cream:      '#efebce',
+            charcoal:   '#1c1c1c',
+          },
+          fontFamily: { ubuntu: ['Ubuntu', 'sans-serif'], luckiest: ['"Luckiest Guy"', 'cursive'] },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Ubuntu', sans-serif; color: #1c1c1c; }
+    .hero-bg { background: linear-gradient(135deg, #1c1c1c 0%, #607466 50%, #628395 100%); }
+    .fpp-display { font-family: 'Luckiest Guy', cursive; letter-spacing: 0.02em; }
+    .btn-primary { background:#1c1c1c; color:#efebce; padding:.85rem 2rem; border-radius:.5rem; font-weight:600; display:inline-block; text-decoration:none; transition:all .2s; }
+    .btn-primary:hover { background:#4d5e52; transform:translateY(-1px); }
+    .btn-secondary { background:transparent; color:#efebce; padding:.85rem 2rem; border-radius:.5rem; font-weight:600; display:inline-block; text-decoration:none; border:2px solid #d6ce93; transition:all .2s; }
+    .btn-secondary:hover { background:rgba(255,255,255,.08); }
+    .code-card { background:#efebce; border:3px solid #1c1c1c; border-radius:12px; box-shadow:10px 10px 0 #4d5e52; padding:2rem; }
+    .code-text { font-family:'Luckiest Guy', cursive; font-size:2.75rem; letter-spacing:.05em; color:#1c1c1c; }
+    .copy-btn { font-family:'Ubuntu',sans-serif; font-size:.8rem; font-weight:600; padding:.5rem 1rem; border-radius:.4rem; background:#1c1c1c; color:#efebce; border:none; cursor:pointer; letter-spacing:.04em; transition:all .15s; }
+    .copy-btn:hover { background:#4d5e52; }
+    .copy-btn.copied { background:#607466; }
+    @media(max-width:768px){ .nav-links{display:none!important;} .code-text{font-size:2rem;} }
+  </style>
+</head>
+
+<body class="bg-white">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHFMCN2S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- NAV -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <nav class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="/" class="flex-shrink-0">
+        <img src="https://us.chat-img.sintra.ai/9084f0c1-ae05-4f46-8c2f-b7b9ddc565d8/500a9431-8608-4450-bdbf-048473e40a10/bannernavhead.png" alt="Forest Park Picnics" class="w-auto block" style="height:3rem;max-height:3rem;" />
+      </a>
+      <div class="nav-links flex items-center gap-8 ml-12">
+        <a href="/#experience" class="text-sm font-medium hover:opacity-70 transition-opacity" style="color:#1C1C1C">The Experience</a>
+        <a href="/#testimonials" class="text-sm font-medium hover:opacity-70 transition-opacity" style="color:#1C1C1C">Reviews</a>
+        <a href="/#book" class="px-6 py-2 rounded-full text-white font-medium hover:opacity-90 transition-opacity" style="background-color:#628395">Book Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO / CONFIRMATION -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden hero-bg pt-24 pb-16 px-6">
+    <div class="relative z-10 max-w-3xl mx-auto text-center text-white">
+
+      <p class="text-xs font-semibold uppercase tracking-widest mb-4 opacity-80" style="color:#D6CE93">You're confirmed</p>
+      <h1 class="fpp-display text-5xl md:text-7xl mb-6 leading-tight">You're In.</h1>
+      <p class="text-xl md:text-2xl mb-12 max-w-xl mx-auto leading-relaxed" style="color:#EFEBCE">
+        Welcome to the list. Here&rsquo;s what you came for &mdash;
+      </p>
+
+      <!-- CODE CARD -->
+      <div class="code-card max-w-md mx-auto mb-10">
+        <p class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:#607466">Your 10% off code</p>
+        <div class="flex items-center justify-center gap-4 mb-3">
+          <span id="fpp-code" class="code-text">INEEDAPICNIC</span>
+        </div>
+        <button id="copy-btn" class="copy-btn">COPY CODE</button>
+        <p class="text-xs mt-4 opacity-70" style="color:#1c1c1c">Use at checkout. Any picnic, any date.</p>
+      </div>
+
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+        <a href="/#book" class="btn-primary">Book Your Picnic</a>
+        <a href="/" class="btn-secondary">Back to Home</a>
+      </div>
+
+      <!-- WHAT'S NEXT -->
+      <div class="border-t pt-12 max-w-2xl mx-auto" style="border-color:rgba(214,206,147,0.25)">
+        <p class="text-xs font-semibold uppercase tracking-widest mb-6 opacity-80" style="color:#D6CE93">What to expect from us</p>
+        <div class="grid md:grid-cols-3 gap-8 text-left">
+          <div>
+            <p class="font-semibold mb-2" style="color:#EFEBCE">Monthly Menus</p>
+            <p class="text-sm opacity-75 leading-relaxed" style="color:#EFEBCE">Fresh courses from four rotating St. Louis eateries &mdash; you&rsquo;ll see the lineup before anyone else.</p>
+          </div>
+          <div>
+            <p class="font-semibold mb-2" style="color:#EFEBCE">Availability Drops</p>
+            <p class="text-sm opacity-75 leading-relaxed" style="color:#EFEBCE">When new dates open, we&rsquo;ll let you know first. No FOMO.</p>
+          </div>
+          <div>
+            <p class="font-semibold mb-2" style="color:#EFEBCE">Romantic Inspiration</p>
+            <p class="text-sm opacity-75 leading-relaxed" style="color:#EFEBCE">An anniversary nudge, a long-weekend idea, the occasional excuse to put your phone down.</p>
+          </div>
+        </div>
+        <p class="text-xs mt-8 opacity-60" style="color:#EFEBCE">No three-emails-a-week. Promise.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-12 px-6" style="background:#1c1c1c;">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4" style="color:#D6CE93">Forest Park Picnics</h3>
+          <p class="text-sm" style="color:#EFEBCE">Zero-hassle, curated picnic experiences featuring food from iconic St. Louis eateries.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4" style="color:#D6CE93">Quick Links</h4>
+          <ul class="space-y-2 text-sm" style="color:#EFEBCE">
+            <li><a href="/#experience" class="hover:opacity-70 transition-opacity" style="color:#EFEBCE">The Experience</a></li>
+            <li><a href="/#how-it-works" class="hover:opacity-70 transition-opacity" style="color:#EFEBCE">How It Works</a></li>
+            <li><a href="/#testimonials" class="hover:opacity-70 transition-opacity" style="color:#EFEBCE">Reviews</a></li>
+            <li><a href="/#book" class="hover:opacity-70 transition-opacity" style="color:#EFEBCE">Book Now</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4" style="color:#D6CE93">Contact</h4>
+          <p class="text-sm mb-2" style="color:#EFEBCE">Part of TourCWE</p>
+          <a href="mailto:hey@forestparkpicnics.com" class="text-sm hover:opacity-70 transition-opacity block mb-2" style="color:#EFEBCE">hey@forestparkpicnics.com</a>
+          <div class="mt-4">
+            <a href="https://forestparkpicnics.com" class="text-sm hover:opacity-70 transition-opacity" style="color:#628395">forestparkpicnics.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 border-t text-center text-sm" style="border-color:rgba(255,255,255,0.1);color:#EFEBCE;opacity:0.5">
+        <p>&copy; 2026 Forest Park Picnics. Supporting Forest Park Forever with every picnic.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const btn = document.getElementById('copy-btn');
+      const code = document.getElementById('fpp-code');
+      if (!btn || !code) return;
+      btn.addEventListener('click', async () => {
+        const text = code.textContent.trim();
+        try {
+          await navigator.clipboard.writeText(text);
+        } catch (err) {
+          // Fallback: select the text so user can manually copy
+          const range = document.createRange();
+          range.selectNode(code);
+          window.getSelection().removeAllRanges();
+          window.getSelection().addRange(range);
+        }
+        const originalText = btn.textContent;
+        btn.textContent = 'COPIED \u2713';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    })();
+  </script>
+
+</body>
+</html>

@@ -80,3 +80,7 @@
   to   = "/404"
   status = 404
   force  = true
+[[redirects]]
+  from = '/thanks'
+  to   = '/thanks.html'
+  status = 200
