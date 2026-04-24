@@ -150,9 +150,9 @@ _Most recent entries at the top. Overnight review appends here. Sunday consolida
 
 ### 4.4 · Site deploy
 - Stack: GitHub → Netlify → Cloudflare. Auto-deploy ~4 sec after push.
-- Repo: `github.com/IBMikeNichols/forestparkpicnics` · Remote: `git@github.com:IBMikeNichols/forestparkpicnics.git`
-- **SSH only. No PATs, ever.** Deploy key: `~/.ssh/fpp_deploy`. Config: `Host github.com → IdentityFile ~/.ssh/fpp_deploy` + `IdentitiesOnly yes`.
-- Local working copy: `~/Desktop/FPP/forestparkpicnics`.
+- Repo: `github.com/racon-tours/forestparkpicnics` · Remote: `https://github.com/racon-tours/forestparkpicnics.git`
+- **Auth via `gh` CLI (HTTPS).** SSH deploy key `~/.ssh/fpp_deploy` remains on the repo as a fallback.
+- Local working copy: `~/dev/forestparkpicnics`.
 - Claude pushes autonomously via osascript from the container.
 - Before any CSS/framework swap (e.g., Tailwind CDN → local), test on a branch. Previous attempt broke the site; revert reflex is correct.
 
